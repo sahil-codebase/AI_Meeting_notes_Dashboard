@@ -27,8 +27,10 @@ const Signup = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="border p-6 rounded w-80">
-        <h1 className="text-xl font-bold mb-4">Sign Up</h1>
+      <div className="border p-10 rounded w-100 shadow-lg">
+        <h1 className="text-2xl text-center text-serif font-bold mb-4">
+          Sign Up
+        </h1>
 
         <input
           className="border p-2 w-full mb-3"
@@ -38,14 +40,14 @@ const Signup = () => {
 
         <input
           type="password"
-          className="border p-2 w-full mb-3"
+          className="border p-2 w-full mb-3 "
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
 
         <button
           onClick={handleSignup}
-          className="bg-blue-500 text-white w-full py-2 rounded"
+          className="bg-blue-500 hover:bg-blue-700 text-white w-full py-2 rounded "
         >
           Sign Up
         </button>

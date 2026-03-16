@@ -6,10 +6,10 @@ const NotesHistory = () => {
   const notes = useAppSelector((state) => state.meetings.notes)
 
   return (
-    <div className="p-6">
-      <h1 className="text-xl font-bold mb-4">Notes History</h1>
+    <div className="p-7">
+      <h1 className="text-3xl font-bold font-serif mb-8">Notes History</h1>
 
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         {notes.map((note) => (
           <Card key={note.id}>
             <p className="font-semibold">Summary</p>

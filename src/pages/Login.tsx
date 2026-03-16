@@ -32,8 +32,10 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="bg-white p-6 rounded shadow w-80">
-        <h1 className="text-xl font-bold mb-4">Login</h1>
+      <div className="bg-white p-12 rounded shadow-lg w-100 ">
+        <h1 className="text-3xl text-center font-bold font-serif mb-5">
+          Login
+        </h1>
 
         <input
           className="border p-2 w-full mb-3"
@@ -52,7 +54,7 @@ const Login = () => {
 
         <button
           onClick={handleLogin}
-          className="bg-blue-500 text-white w-full py-2 rounded"
+          className="bg-blue-500 hover:bg-blue-700 text-white w-full py-2 rounded"
         >
           Login
         </button>

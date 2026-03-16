@@ -28,22 +28,26 @@ const UploadTranscript = () => {
   }
 
   return (
-    <div className="p-6">
-      <h1 className="text-xl font-bold mb-4">Upload Transcript</h1>
+    <div className="flex justify-center items-center w-full">
+      <div className="w-full max-w-xl">
+        <h1 className="text-2xl font-bold font-serif mb-6 text-center">
+          Upload Transcript
+        </h1>
 
-      <textarea
-        className="w-full border p-3"
-        rows={8}
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
+        <textarea
+          className=" w-full border p-3"
+          rows={8}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        />
 
-      <button
-        onClick={handleSubmit}
-        className="bg-blue-500 text-white px-4 py-2 mt-4 rounded"
-      >
-        {loading ? 'Processing...' : 'Generate Notes'}
-      </button>
+        <button
+          onClick={handleSubmit}
+          className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 mt-4 rounded"
+        >
+          {loading ? 'Processing...' : 'Generate Notes'}
+        </button>
+      </div>
     </div>
   )
 }
