@@ -13,6 +13,7 @@ const Sidebar = () => {
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/upload">Upload Transcript</Link>
         <Link to="/history">Notes History</Link>
+        <Link to="/settings">Settings</Link>
       </nav>
 
       <button

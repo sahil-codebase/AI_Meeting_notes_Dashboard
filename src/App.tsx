@@ -8,14 +8,14 @@ import Dashboard from './pages/Dashboard'
 import UploadTranscript from './pages/UploadTranscript'
 import NotesHistory from './pages/NoteHistory'
 import Signup from './pages/Signup'
+import Settings from './pages/Settings'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-
+        <Route path="/signup" element={<Signup />} />-
         <Route
           path="/dashboard"
           element={
@@ -27,7 +27,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/upload"
           element={
@@ -39,7 +38,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/history"
           element={
@@ -47,6 +45,17 @@ function App() {
               <div className="flex">
                 <Sidebar />
                 <NotesHistory />
+              </div>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/settings"
+          element={
+            <ProtectedRoute>
+              <div className="flex">
+                <Sidebar />
+                <Settings />
               </div>
             </ProtectedRoute>
           }
