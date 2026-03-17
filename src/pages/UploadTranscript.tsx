@@ -8,6 +8,8 @@ import { processTranscript } from '../services/meetingApi'
 
 import { useNavigate } from 'react-router-dom'
 
+import { Button } from '@/components/ui/button'
+
 const UploadTranscript = () => {
   const [text, setText] = useState('')
 
@@ -47,12 +49,12 @@ const UploadTranscript = () => {
           onChange={(e) => setText(e.target.value)}
         />
 
-        <button
+        <Button
           onClick={handleSubmit}
           className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 mt-4 rounded"
         >
           {loading ? 'Processing...' : 'Generate Notes'}
-        </button>
+        </Button>
       </div>
     </div>
   )
