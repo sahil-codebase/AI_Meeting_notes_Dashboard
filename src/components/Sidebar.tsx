@@ -85,7 +85,7 @@ const Sidebar = () => {
       <Button
         onClick={() => dispatch(logout())}
         variant="destructive"
-        className="w-full flex font-bold bg-red-400 hover:bg-red-500 text-xl gap-2"
+        className="w-full flex font-bold bg-red-800 hover:bg-red-500 text-xl gap-2"
       >
         <LogOut className="h-3  w-4" />
         Logout
