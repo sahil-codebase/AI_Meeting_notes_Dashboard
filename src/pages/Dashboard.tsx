@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   return (
     <div className="p-6 w-full">
-      <h1 className="text-2xl font-bold mb-9">Dashboard</h1>
+      <h1 className="text-2xl font-inter font-bold mb-9">Dashboard</h1>
 
       <div className="grid grid-cols-3 gap-6">
         {/* Total Meetings */}

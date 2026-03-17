@@ -38,6 +38,9 @@ export default {
         input: "oklch(var(--input))",
         ring: "oklch(var(--ring))",
       },
+        fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
 
       borderRadius: {
         lg: "var(--radius)",

@@ -7,7 +7,7 @@ const NotesHistory = () => {
 
   return (
     <div className="p-7">
-      <h1 className="text-3xl font-bold font-serif mb-8">Notes History</h1>
+      <h1 className="text-3xl font-bold mb-8">Notes History</h1>
 
       <div className="grid grid-cols-4 gap-4">
         {notes.map((note) => (

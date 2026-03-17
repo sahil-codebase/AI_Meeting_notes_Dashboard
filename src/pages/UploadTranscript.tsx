@@ -38,7 +38,7 @@ const UploadTranscript = () => {
   return (
     <div className="flex justify-center items-center w-full">
       <div className="w-full max-w-xl">
-        <h1 className="text-2xl font-bold font-serif mb-6 text-center">
+        <h1 className="text-2xl font-bold mb-6 text-center">
           Upload Transcript
         </h1>
 
