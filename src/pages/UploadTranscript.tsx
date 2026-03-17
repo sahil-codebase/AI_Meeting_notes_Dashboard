@@ -6,12 +6,16 @@ import { addNote } from '../redux/slices/meetingSlice'
 
 import { processTranscript } from '../services/meetingApi'
 
+import { useNavigate } from 'react-router-dom'
+
 const UploadTranscript = () => {
   const [text, setText] = useState('')
 
   const [loading, setLoading] = useState(false)
 
   const dispatch = useAppDispatch()
+
+  const navigate = useNavigate()
 
   const handleSubmit = async () => {
     if (!text.trim()) return
@@ -21,6 +25,8 @@ const UploadTranscript = () => {
     const result = await processTranscript(text)
 
     dispatch(addNote(result))
+
+    navigate('/history')
 
     setLoading(false)
 
